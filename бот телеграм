@@ -1,0 +1,7 @@
+import telebot;
+bot = telebot.TeleBot('1818302440:AAEp_H7iBO2pF4Rn-QglZbnxib1NCAYP2S4')
+@bot.message_handler(content_types=['text'])
+def handle_message(message):
+bot.send_message(message.chat.id, message.text)
+python superotvet_bot.py
+
